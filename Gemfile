@@ -4,6 +4,8 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
+# Use Tailwind CSS for styling
+gem "tailwindcss-rails"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -18,9 +20,6 @@ gem "stimulus-rails"
 gem "jbuilder"
 # Use Devise for authentication
 gem "devise"
-# Use Rails Admin for admin interface
-gem "rails_admin"
-
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
