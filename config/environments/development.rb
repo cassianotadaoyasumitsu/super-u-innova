@@ -6,6 +6,10 @@ Rails.application.configure do
   # Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # config/environments/development.rb
+  config.hosts << /.*\.lvh\.me/
+
+
   # Make code changes take effect immediately without server restart.
   config.enable_reloading = true
 

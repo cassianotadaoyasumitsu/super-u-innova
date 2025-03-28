@@ -12,6 +12,8 @@
           <span class="text-gray-700">Welcome, <%= current_user.email %></span>
           <%= button_to "Sign Out", destroy_user_session_path, method: :delete, 
               class: "bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105" %>
+          <%= link_to "Companies", companies_path, 
+              class: "bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105" %>
         <% else %>
           <%= link_to "Sign In", new_user_session_path, 
               class: "bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105" %>
